@@ -33,10 +33,7 @@ public class TConstruct {
         TinkerRegistry.addMaterialStats(TConstruct.nagascale,
                 new HeadMaterialStats(460, 8.9f, 4.3f, HarvestLevels.IRON),
                 new BowMaterialStats(0.6f, 2f, 0),
-                new ArrowShaftMaterialStats(1.4f, 20),
-                new CoreMaterialStats(13f,20f),
-                new PlatesMaterialStats(1f,5f,0.5f),
-                new TrimMaterialStats(9f));
+                new ArrowShaftMaterialStats(1.4f, 20));
         TinkerRegistry.integrate(TConstruct.nagascale).preInit();
 
         TinkerRegistry.addMaterialStats(TConstruct.steeleaf,
@@ -45,10 +42,7 @@ public class TConstruct {
                 new ExtraMaterialStats(100),
                 new BowMaterialStats(1.4f, 1.8f, 4),
                 new ArrowShaftMaterialStats(0.6f, 10),
-                new FletchingMaterialStats(1f, 0.8f),
-                new CoreMaterialStats(6f,20f),
-                new PlatesMaterialStats(0.8f,2f,0f),
-                new TrimMaterialStats(4f));
+                new FletchingMaterialStats(1f, 0.8f));
         TinkerRegistry.integrate(new MaterialIntegration(TConstruct.steeleaf, null, "Steeleaf")).toolforge().preInit();
 
         TinkerRegistry.addMaterialStats(TConstruct.fierymetal,
@@ -56,19 +50,13 @@ public class TConstruct {
                 new HandleMaterialStats(0.7f, 400),
                 new ExtraMaterialStats(200),
                 new BowMaterialStats(1f, 0.9f, 2),
-                new ArrowShaftMaterialStats(0.7f, 0),
-                new CoreMaterialStats(18f,24f),
-                new PlatesMaterialStats(0.7f,4f,1.5f),
-                new TrimMaterialStats(8f));
+                new ArrowShaftMaterialStats(0.8f, 0));
         TinkerRegistry.integrate(new MaterialIntegration(TConstruct.fierymetal, RegisterBlockEvent.moltenFiery, "Fiery")).toolforge().preInit();
 
         TinkerRegistry.addMaterialStats(TConstruct.knightmetal,
                 new HeadMaterialStats(1200, 8f, 7f, HarvestLevels.COBALT),
                 new HandleMaterialStats(1.5f, 100),
-                new ExtraMaterialStats(550),
-                new CoreMaterialStats(24f,20f),
-                new PlatesMaterialStats(1.5f,12f,1f),
-                new TrimMaterialStats(9f));
+                new ExtraMaterialStats(550));
         TinkerRegistry.integrate(new MaterialIntegration(TConstruct.knightmetal, RegisterBlockEvent.moltenKnightmetal, "Knightmetal")).preInit();
 
         TinkerRegistry.addMaterialStats(TConstruct.ravenFeather,
